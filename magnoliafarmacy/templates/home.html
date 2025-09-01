@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Magnolia Farmacy</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <script src="{% static 'js/main.js' %}" defer> </script>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>Magnolia Farmacy - Home</h1>
-        <p>Check out <a href="/about">who we are</a></p>
-    </body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+    Magnolia
+{% endblock %}
+
+{% block content %}
+    <h1>Magnolia Farmacy - Home</h1>
+    <p>Check out <a href="/about">who we are</a></p>
+{% endblock %}

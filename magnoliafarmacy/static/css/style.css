@@ -6,12 +6,11 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    place-content: center;
-    font-size: 3rem;
     background-color: black;
     color: whitesmoke;
-    flex-flow: flex;
+    font-size: 3rem;
+    display: flex;
+    flex-flow: column;
 }
 
 nav {
@@ -27,7 +26,11 @@ main {
     place-content: center;
 }
 
-h1, p {
+h1,
+h2,
+h3,
+h4,
+p {
     text-align: center;
 }
 

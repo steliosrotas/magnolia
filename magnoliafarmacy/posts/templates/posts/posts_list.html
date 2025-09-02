@@ -5,5 +5,17 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Feed Dashboard</h1>
+    <section>
+    <h1>Magnolia Farmacy</h1>
+    <br>
+    <h2> <mark>Feed Dashboard</mark> </h2>
+    <br>
+    {% for post in posts %}
+        </article class="posts">
+            <h2> {{ post.title }} </h2>
+            <p> {{ post.date }} </p>
+            <p> {{ post.body }} </p>
+        </article>
+    {% endfor %}
+    </section>
 {% endblock %}
